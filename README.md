@@ -4,6 +4,13 @@ A small, offline Python CLI for expanding common email security URL wrappers dur
 
 > Decoding is not a safety verdict. Treat recovered destinations as untrusted and inspect them in an appropriate isolated workflow.
 
+## Companion guide and web tool
+
+- Read the [guide to decoding Safe Links, Proofpoint, Mimecast, and Barracuda URLs](https://thehackerroom.com/blog/how-to-decode-email-security-links/) for format details, synthetic examples, and a safe analyst workflow.
+- Use the [browser-based Email URL Decoder](https://thehackerroom.com/tools/url-decoder/) when you want to decode a link without installing or running this script.
+
+This repository contains the offline Python example from the guide. The web tool and this CLI may support different providers.
+
 ## Supported wrappers
 
 - Microsoft Safe Links
@@ -56,10 +63,3 @@ python3 -m unittest discover -s tests -v
 ```
 
 The tests use only synthetic URLs and do not make network requests.
-
-## Related resources
-
-- [The Hacker Room URL Decoder tool](https://thehackerroom.com/tools/url-decoder/)
-- [Article: How to Decode Safe Links, Proofpoint, Mimecast and Barracuda URLs](https://thehackerroom.com/blog/how-to-decode-email-security-links/)
-
-This repository accompanies the article’s command-line example. The web tool and this CLI may support different providers.
